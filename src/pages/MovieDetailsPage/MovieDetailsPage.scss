@@ -1,0 +1,18 @@
+.movie {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  &__poster {
+    width: 300px;
+    border-radius: 10px;
+  }
+  &__detail {
+    // text-align:center;
+    &--overview {
+      width: 300px;
+    }
+  }
+}

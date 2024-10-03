@@ -11,7 +11,7 @@ const MovieCard = ({ movie }) => {
       />
       <div className="movie-card__details">
         <h3>{movie.title}</h3>
-        <p>{movie.overview}</p>
+        <p>{`${movie.overview.substring(0, 100)}... `}</p>
         <p>Relaese Date: {movie.release_date}</p>
         <p>Genre: Animation</p>
       </div>
