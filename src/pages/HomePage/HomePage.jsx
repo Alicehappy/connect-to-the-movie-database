@@ -60,7 +60,7 @@ export default function HomePage({ movies }) {
         <h1>
           This is a Animations Tool Search, please insert a valide genre 😉
         </h1>
-        <button onClick={handleOnClick}>Go Back</button>
+        <button onClick={handleOnClick} className="button">Go Back</button>
       </>
     );
   }
@@ -72,10 +72,8 @@ export default function HomePage({ movies }) {
     <>
       <div className="home">
         <div className="home__hero">
-          <img src="connect-to-the-movie-database\src\assets\fun-image.webp" />
-        </div>
-
-        <form className="form" onSubmit={handleOnSubmit}>
+          {/* <img src="/src/assets/fun-image.webp" className="home__hero-image"/> */}
+          <form className="form" onSubmit={handleOnSubmit}>
           <label htmlFor="searchInput" className="form__label"></label>
           <input
             type="text"
@@ -84,8 +82,9 @@ export default function HomePage({ movies }) {
             id="searchInput"
             placeholder="Enter a movie genre"
           />
-          <button type="submit">Search</button>
+          <button type="submit" className="form__submit">Search</button>
         </form>
+        </div>
 
         {showMovies ? (
           <div className="home__movies">

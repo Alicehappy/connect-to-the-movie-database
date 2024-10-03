@@ -1,7 +1,72 @@
 @use "../../styles/partials/base";
 
 .home {
+  margin: 2rem;
+  height: 700px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  align-items: center;
+
+  &__hero {
+    background-image: url("/src/assets/fun-image.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    min-height: 700px;
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  &__search {
+    max-width: 400px;
+    height: 2.5rem;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin: 1.5rem 0;
+    width: inherit;
+    padding-left: 1rem;
+
+    &::placeholder {
+      padding-left: 1rem;
+    }
+
+    &:focus {
+      border: 2px solid #9057ca;
+    }
+  }
+
+  &__submit {
+    width: 6.25rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: .25rem;
+    background-color: #9057ca;
+    opacity: 90%;
+    color: aliceblue;
+    font-size: 600;
+  }
+}
+
+.button {
+  width: 6.25rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border: 2px solid #734f96;
+  border-radius: .25rem;
+  font-weight: bold;
 }
