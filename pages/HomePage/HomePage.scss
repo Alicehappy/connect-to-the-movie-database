@@ -1,0 +1,7 @@
+@use "../../src/styles/partials/base";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}

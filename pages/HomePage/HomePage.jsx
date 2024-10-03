@@ -71,8 +71,10 @@ export default function HomePage () {
   return (
     <>
       <div className='home'>
-        <div>
-
+        <div className='home__hero'>
+          <img 
+            src='connect-to-the-movie-database\src\assets\fun-image.webp'
+          />
         </div>
 
         <form className='form' onSubmit={handleOnSubmit}>
