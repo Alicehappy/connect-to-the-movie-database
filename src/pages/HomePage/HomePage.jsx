@@ -1,4 +1,4 @@
-import MovieList from '../../src/components/MovieList/MovieList';
+import MovieList from '../../components/MovieList/MovieList';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './HomePage.scss';

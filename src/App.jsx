@@ -1,10 +1,6 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import MovieList from "./components/MovieList/MovieList";
-
+import HomePage from "./pages/HomePage/HomePage";
 import "./App.scss";
-import HomePage from "../pages/HomePage/HomePage";
 
 
 function App() {
