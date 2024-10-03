@@ -1,0 +1,21 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+
+.movie-list {
+  @include center-flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.movie-list__heading {
+  font-size: 2rem;
+  color: $primary-color;
+  margin-bottom: 1.25rem;
+}
+
+.movie-list__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}

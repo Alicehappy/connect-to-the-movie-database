@@ -1,0 +1,33 @@
+@use "../../styles/partials/variables" as *;
+
+.movie-card {
+  background-color: white;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__details {
+    padding: 0.9375rem;
+    text-align: center;
+
+    h3 {
+      font-size: 1.2rem;
+      margin: 0.625rem 0;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: scale-color($text-color, $lightness: -20%);
+    }
+  }
+}
